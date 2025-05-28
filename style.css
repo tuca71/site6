@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f4;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  padding: 1em;
+}
+
+header {
+  background: #111;
+  color: #fff;
+  padding: 1em 0;
+}
+
+.logo {
+  width: 150px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  gap: 1em;
+  list-style: none;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+#btnMenu {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5em;
+}
+
+/* Banner */
+#banner {
+  background: #008080;
+  color: white;
+  padding: 4em 1em;
+  text-align: center;
+}
+
+/* Seções */
+section {
+  margin: 2em 0;
+}
+
+#servicos ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.marcas {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+.marcas img {
+  width: 45%;
+  border-radius: 8px;
+}
+
+/* Formulário */
+form input, form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 1em;
+  padding: 0.7em;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background: #008080;
+  color: white;
+  border: none;
+  padding: 0.8em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  background: #111;
+  color: white;
+  margin-top: 2em;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: #222;
+    position: absolute;
+    top: 60px;
+    right: 1em;
+    width: 200px;
+  }
+.btn-whatsapp {
+  display: inline-block;
+  margin-top: 1em;
+  background-color: #25D366;
+  color: white;
+  text-decoration: none;
+  padding: 0.8em 1.2em;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+  background-color: #1ebe5d;
+}
+
+  nav ul.active {
+    display: flex;
+  }
+
+  #btnMenu {
+    display: block;
+  }
+
+  .marcas img {
+    width: 100%;
+  }
+}
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background-color: #25D366;
+  padding: 12px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float img {
+  width: 32px;
+  height: 32px;
+  filter: invert(1);
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
