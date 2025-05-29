@@ -4,12 +4,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Atitude Cell - Assistência Técnica</title>
+  <meta name="description" content="Assistência técnica especializada em conserto de celulares. Atendemos diversas marcas com agilidade, garantia e confiança.">
+<meta name="keywords" content="conserto de celular, assistência técnica, atitude cell, troca de tela, celular quebrado, manutenção de celular">
+<meta name="author" content="Atitude Cell">
+<meta name="robots" content="index, follow">
+
   <link rel="stylesheet" href="style.css" />
   <meta name="description" content="Assistência técnica especializada em conserto de celulares. Atendemos diversas marcas com agilidade, garantia e confiança.">
 <meta name="keywords" content="conserto de celular, assistência técnica, atitude cell, troca de tela, celular quebrado, manutenção de celular">
 <meta name="author" content="Atitude Cell">
 
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
 </head>
+
+
 <body>
 
   <header>
@@ -23,11 +32,15 @@
           <li><a href="#contato">Contato</a></li>
         </ul>
         <button id="btnMenu">☰</button>
+        <button id="toggleDark">🌙</button>
+
       </nav>
     </div>
   </header>
 
   <section id="banner">
+    <section id="sobre" class="container" data-aos="fade-up">
+
     <div class="container">
       <h1>Atitude Cell</h1>
       <p>Consertamos seu celular com agilidade, qualidade e garantia.</p>
@@ -35,11 +48,15 @@
   </section>
 
   <section id="sobre" class="container">
+    <section id="sobre" class="container" data-aos="fade-up">
+
     <h2>Sobre Nós</h2>
     <p>Somos uma assistência técnica especializada em conserto de celulares de todas as marcas. Atuamos com transparência, agilidade e garantia em cada serviço prestado.</p>
   </section>
 
   <section id="servicos" class="container">
+    <section id="sobre" class="container" data-aos="fade-up">
+
     <h2>Serviços</h2>
     <ul>
       <li>Troca de tela</li>
@@ -50,10 +67,20 @@
     </ul>
   </section>
   <section id="depoimentos" class="container">
+    <section id="sobre" class="container" data-aos="fade-up">
+
   <h2>Depoimentos</h2>
   <div class="depoimento">
     <img src="./img/luis.webp" alt="Cliente feliz">
     <blockquote>"Atendimento rápido e excelente! Voltarei sempre que precisar." <br><strong>- João da Silva</strong></blockquote>
+  </div>
+</section>
+<section data-aos="fade-up">...</section>
+<section id="depoimentos" class="container">
+  <h2>Depoimentos</h2>
+  <div class="depoimento">
+    <img src="./img/luis.webp" alt="Cliente satisfeito">
+    <blockquote>"Serviço rápido e de qualidade. Super recomendo!"<br><strong>- Fernanda Alves</strong></blockquote>
   </div>
 </section>
 
@@ -65,6 +92,8 @@
       <img src="./img/imagem2.png" alt="Reparo de placa">
     </div>
   </section>
+
+
 
   <section id="contato" class="container">
     <p><strong>Endereço:</strong> <a href="https://www.google.com/maps?q=Av+Professora+Luiza+Garcia+Ribeiro+686" target="_blank">Av: Professora Luiza Garcia Ribeiro 686</a></p>
@@ -92,5 +121,14 @@
 <img src="img/whatsapp.png" alt="WhatsApp">
 
   <script src="script.js"></script>
+  <div id="chatbot" class="chatbox">
+  <div class="chat-header">Atitude Cell</div>
+  <div class="chat-body">Olá! Como posso te ajudar?</div>
+  <a class="chat-btn" href="https://wa.me/5514988080325?text=Olá!%20Tenho%20uma%20dúvida." target="_blank">Enviar pelo WhatsApp</a>
+</div>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>

@@ -19,3 +19,6 @@ document.getElementById("formContato").addEventListener("submit", function (e) {
   alert("Mensagem enviada com sucesso! Entraremos em contato.");
   this.reset();
 });
+document.getElementById("toggleDark").addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+});
